@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+  background-image: url('https://source.unsplash.com/1600x900/?money,business');
+  /* Money-related background */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  /* Default text color */
+}
+
+.App {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Light overlay for readability */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Darken header for contrast */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Sidebar Styles */
+.w-64 {
+  background-color: rgba(0, 51, 102, 0.8);
+  /* Dark blue with transparency */
+  color: #fff;
+  padding: 20px 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+ul li {
+  padding: 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+ul li:hover {
+  background-color: rgba(0, 51, 102, 0.7);
+  transition: background-color 0.3s;
+}
+
+ul li.active {
+  background-color: rgba(0, 51, 102, 1);
+}
+
+/* Client Table Styles */
+.client-table {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.client-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.client-table th,
+.client-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.client-table th {
+  background-color: #f4f4f9;
+}
+
+.client-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Button Styles */
+button {
+  background-color: #4CAF50;
+  /* Green for buttons */
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Call, Email buttons in Client Section */
+.client-actions a,
+.client-actions button {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.client-actions .call-btn {
+  background-color: #008CBA;
+}
+
+.client-actions .call-btn:hover {
+  background-color: #007BB5;
+}
+
+.client-actions .email-btn {
+  background-color: #4CAF50;
+}
+
+.client-actions .email-btn:hover {
+  background-color: #45a049;
+}
+
+/* Add Client Button */
+.add-client-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-client-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Card Section */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 1rem;
+  /* Corrected from 1re to 1rem */
+  color: #555;
+}
