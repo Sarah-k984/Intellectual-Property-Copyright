@@ -1,0 +1,3 @@
+use('DebtPulse')
+db.getCollectionNames();
+
